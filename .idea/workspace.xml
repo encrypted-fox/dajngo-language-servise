@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="128ec132-9d3d-464b-b51d-4a157010e98e" name="Default Changelist" comment="" />
+    <list default="true" id="128ec132-9d3d-464b-b51d-4a157010e98e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logging_database/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging_database/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +43,21 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -41,6 +65,11 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Yaroslav Souchkov &lt;yaroslav.souchkov@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TLb8RPImJhAmt8SsoWQk2zX8mY" />
@@ -50,6 +79,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -58,13 +88,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Media\Projects\_LEARNING\services\languages\migrations" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Media\Projects\PyCharmProjects\services\logging_database" />
       <recent name="E:\Media\Projects\_LEARNING\services\languages" />
       <recent name="E:\Media\Projects\_LEARNING\services\countries" />
       <recent name="E:\Media\Projects\_LEARNING\services\cities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Media\Projects\_LEARNING\services\languages\migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,7 +129,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db [2]" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db [2]" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@242b03e5" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -133,6 +174,7 @@
       <workItem from="1576077707966" duration="32000" />
       <workItem from="1576077749598" duration="117000" />
       <workItem from="1576565593011" duration="5067000" />
+      <workItem from="1576914088744" duration="1317000" />
     </task>
     <servers />
   </component>
@@ -152,29 +194,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576077728572" />
+    <state x="573" y="27" key="CommitChangelistDialog2" timestamp="1576822348112">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="573" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576822348112" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1576077864338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576077864338" />
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1576574677411">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1576915510905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576574677411" />
-    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1576574677410">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576915510905" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1576915510905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576574677410" />
-    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1576574677410">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576915510905" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1576915510905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576574677410" />
-    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1576574677410">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576915510905" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1576915510905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576574677410" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576915510905" />
     <state x="722" y="166" key="SettingsEditor" timestamp="1576570311227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576570311227" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1576822358434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576822358434" />
   </component>
 </project>

@@ -1,0 +1,366 @@
+PUT /api/v0/cities/4/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_ACCEPT': 'text/html; q=1.0, */*', 'HTTP_ORIGIN': 'http://127.0.0.1:8000', 'HTTP_X_CSRFTOKEN': 'i9sMcls5tQ1pQWZQpim60w8HCnP6LUBg0ipVeaOETgFkafDhuxb6p6JjdWEXDxMi', 'HTTP_X_REQUESTED_WITH': 'XMLHttpRequest', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/cities/4/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; csrftoken=IzZSks1NK5I6o9u1Bly4kzugJs4rZmP3qIW1mhnmavm1Is8sGAn4J95Sk1TiRZ05; tabstyle=html-tab'}
+------WebKitFormBoundary66tdOr1lf7BF5a47
+
+Content-Disposition: form-data; name="name"
+
+Mazar-e-Sharifs
+------WebKitFormBoundary66tdOr1lf7BF5a47
+
+Content-Disposition: form-data; name="district"
+
+Balkh
+------WebKitFormBoundary66tdOr1lf7BF5a47
+
+Content-Disposition: form-data; name="population"
+
+127800
+------WebKitFormBoundary66tdOr1lf7BF5a47
+
+Content-Disposition: form-data; name="country_code"
+
+AFG
+------WebKitFormBoundary66tdOr1lf7BF5a47
+--
+
+PUT /api/v0/cities/4/ - 200
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D; sessionid=fmccqcp1ez51dv4vxc2bdsczhg6fxrxz'}
+GET / - 200
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Not Found: /favicon.ico
+GET /api/v0/cities/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/cities/ - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/?offset=100
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/?offset=100 - 200
+GET /api/v0/countries/?offset=200
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/?offset=100', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/?offset=200 - 200
+GET /api/v0/countries/?offset=100
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/?offset=200', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/?offset=100 - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/?offset=100', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/?offset=100
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/?offset=100 - 200
+GET /api/v0/countries/?offset=200
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/?offset=100', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/?offset=200 - 200
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/?offset=200', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+GET /api/v0/countries/?continent=North+America&name=&local_name=
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/?continent=North+America&name=&local_name= - 200
+Request datetime: 2019-12-21 10:49:08.424512
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:49:08.531204
+Request datetime: 2019-12-21 10:49:09.350058
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-21 10:49:09.382973
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 177, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-21 10:50:56.808416
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:50:56.913136
+Request datetime: 2019-12-21 10:50:57.570534
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_PRAGMA': 'no-cache', 'HTTP_CACHE_CONTROL': 'no-cache', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-21 10:50:57.598538
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 177, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-21 10:52:17.260069
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:52:17.357341
+Request datetime: 2019-12-21 10:52:17.939014
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_PRAGMA': 'no-cache', 'HTTP_CACHE_CONTROL': 'no-cache', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-21 10:52:17.964947
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 177, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-21 10:52:45.682179
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:52:45.749161
+Request datetime: 2019-12-21 10:52:46.257829
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-21 10:52:46.296993
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 177, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-21 10:53:38.843865
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:53:38.964542
+Request datetime: 2019-12-21 10:53:39.570756
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_PRAGMA': 'no-cache', 'HTTP_CACHE_CONTROL': 'no-cache', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-21 10:53:39.598894
+Not Found: /favicon.ico
+Request datetime: 2019-12-21 10:55:07.123711
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:55:07.199029
+Request datetime: 2019-12-21 10:57:18.242967
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:57:18.317759
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.body)
+AttributeError: 'Response' object has no attribute 'body'
+Request datetime: 2019-12-21 10:57:20.682355
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:57:20.724246
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.body)
+AttributeError: 'Response' object has no attribute 'body'
+Request datetime: 2019-12-21 10:57:21.758232
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:57:21.795229
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = str(response.body)
+AttributeError: 'Response' object has no attribute 'body'
+Request datetime: 2019-12-21 10:59:18.872250
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-21 10:59:18.951810
+Request datetime: 2019-12-21 11:00:00.248788
+GET /citied
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /citied - 404
+Response datetime: 2019-12-21 11:00:00.270749
+Not Found: /citied
+Request datetime: 2019-12-21 11:00:02.401231
+GET /cities
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /cities - 404
+Response datetime: 2019-12-21 11:00:02.415201
+Not Found: /cities
+Request datetime: 2019-12-21 11:00:53.020663
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:00:53.533845
+Internal Server Error: /api/v0/countries/
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = self._chunked_to_max(response.status_code)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 258, in _chunked_to_max
+    return msg[0:self.max_body_length]
+TypeError: 'int' object is not subscriptable
+Request datetime: 2019-12-21 11:01:06.090993
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:01:06.400691
+Internal Server Error: /api/v0/countries/
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = self._chunked_to_max(response.status_code)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 258, in _chunked_to_max
+    return msg[0:self.max_body_length]
+TypeError: 'int' object is not subscriptable
+Request datetime: 2019-12-21 11:01:07.636648
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:01:07.952624
+Internal Server Error: /api/v0/countries/
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = self._chunked_to_max(response.status_code)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 258, in _chunked_to_max
+    return msg[0:self.max_body_length]
+TypeError: 'int' object is not subscriptable
+Request datetime: 2019-12-21 11:01:08.699773
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:01:08.990356
+Internal Server Error: /api/v0/countries/
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 82, in __call__
+    self.process_response( request, response )
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 186, in process_response
+    self._log_resp(self.log_level, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 252, in _log_resp
+    self.logger.database_logger.resp_body = self._chunked_to_max(response.status_code)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 258, in _chunked_to_max
+    return msg[0:self.max_body_length]
+TypeError: 'int' object is not subscriptable
+Request datetime: 2019-12-21 11:01:37.384695
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'cross-site', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:01:37.791990
+Request datetime: 2019-12-21 11:01:59.712408
+GET /api/v0/countries/1/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/1/ - 404
+Response datetime: 2019-12-21 11:01:59.856073
+Not Found: /api/v0/countries/1/
+Request datetime: 2019-12-21 11:02:11.328358
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_PURPOSE': 'prefetch', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:02:11.594495
+Request datetime: 2019-12-21 11:02:20.192293
+GET /api/v0/countries/ABW/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ABW/ - 200
+Response datetime: 2019-12-21 11:02:20.346320
+Request datetime: 2019-12-21 11:03:32.215569
+GET /api/v0/countries/ABW/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ABW/ - 200
+Response datetime: 2019-12-21 11:03:32.411574
+Request datetime: 2019-12-21 11:04:43.104525
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:04:43.610524
+Request datetime: 2019-12-21 11:04:57.898707
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:04:58.383281

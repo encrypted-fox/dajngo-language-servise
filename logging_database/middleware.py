@@ -1,5 +1,6 @@
 import logging
 import re
+from datetime import datetime
 
 from django.conf import settings
 try:
@@ -8,7 +9,8 @@ try:
 except ImportError:
     # Django < 1.10
     from django.core.urlresolvers import resolve, Resolver404
-from django.utils.termcolors import colorize
+from .models import LoggingDatabase
+
 
 DEFAULT_LOG_LEVEL = logging.DEBUG
 DEFAULT_HTTP_4XX_LOG_LEVEL = logging.ERROR
@@ -29,6 +31,8 @@ request_logger = logging.getLogger('django.request')
 
 
 class Logger:
+    database_logger = LoggingDatabase.objects.create_logging()
+
     def log(self, level, msg, logging_context):
         args = logging_context['args']
         kwargs = logging_context['kwargs']
@@ -37,27 +41,6 @@ class Logger:
 
     def log_error(self, level, msg, logging_context):
         self.log(level, msg, logging_context)
-
-
-class ColourLogger(Logger):
-    def __init__(self, log_colour, log_error_colour):
-        self.log_colour = log_colour
-        self.log_error_colour = log_error_colour
-
-    def log(self, level, msg, logging_context):
-        colour = self.log_error_colour if level >= logging.ERROR else self.log_colour
-        self._log(level, msg, colour, logging_context)
-
-    def log_error(self, level, msg, logging_context):
-        # Forces colour to be log_error_colour no matter what level is
-        self._log(level, msg, self.log_error_colour, logging_context)
-
-    def _log(self, level, msg, colour, logging_context):
-        args = logging_context['args']
-        kwargs = logging_context['kwargs']
-        for line in re.split(r'\r?\n', str(msg)):
-            line = colorize(line, fg=colour)
-            request_logger.log(level, line, *args, **kwargs)
 
 
 class LoggingMiddleware(object):
@@ -149,9 +132,12 @@ class LoggingMiddleware(object):
 
     def _log_request(self, request):
         method_path = "{} {}".format(request.method, request.get_full_path())
-
         logging_context = self._get_logging_context(request, None)
+        req_date = str(datetime.now())
+        self.logger.log(self.log_level, "".join(["Request datetime: ", req_date]), logging_context)
+        self.logger.database_logger.req_date = str(req_date)
         self.logger.log(logging.INFO, method_path, logging_context)
+        self.logger.database_logger.req_type = method_path
         self._log_request_headers(request, logging_context)
         self._log_request_body(request, logging_context)
 
@@ -160,6 +146,7 @@ class LoggingMiddleware(object):
 
         if headers:
             self.logger.log(self.log_level, headers, logging_context)
+            self.logger.database_logger.req_from = headers['HTTP_HOST'] or ""
 
     def _log_request_body(self, request, logging_context):
         if request.body:
@@ -170,7 +157,9 @@ class LoggingMiddleware(object):
             if is_multipart:
                 self._log_multipart(self._chunked_to_max(request.body), logging_context)
             else:
-                self.logger.log(self.log_level, self._chunked_to_max(request.body), logging_context)
+                req_body = self._chunked_to_max(request.body).decode("utf-8")
+                self.logger.database_logger.req_body = str(req_body)
+                self.logger.log(self.log_level, req_body, logging_context)
 
     def process_response(self, request, response):
         resp_log = "{} {} - {}".format(request.method, request.get_full_path(), response.status_code)
@@ -221,8 +210,10 @@ class LoggingMiddleware(object):
         """
         try:
             body_str = body.decode()
+            self.logger.database_logger.req_body = str(body_str)
         except UnicodeDecodeError:
             self.logger.log(self.log_level, "(multipart/form)", logging_context)
+            self.logger.database_logger.req_body = "(multipart/form)"
             return
 
         parts = body_str.split(self.boundary)
@@ -239,6 +230,9 @@ class LoggingMiddleware(object):
             self.logger.log(self.log_level, part, logging_context)
 
     def _log_resp(self, level, response, logging_context):
+        date = str(datetime.now())
+        self.logger.log(self.log_level, "".join(["Response datetime: ", date]), logging_context)
+        self.logger.database_logger.resp_date = date
         if re.match('^application/json', response.get('Content-Type', ''), re.I):
             self.logger.log(level, response._headers, logging_context)
             if response.streaming:
@@ -247,9 +241,17 @@ class LoggingMiddleware(object):
                 # documentation advises to iterate only once on the content.
                 # So the idea here is to just _not_ log it.
                 self.logger.log(level, '(data_stream)', logging_context)
+                self.logger.database_logger.resp_body = '(data_stream)'
             else:
-                self.logger.log(level, self._chunked_to_max(response.content),
+                resp_body = self._chunked_to_max(response.content)
+                self.logger.log(level, resp_body,
                                 logging_context)
+                self.logger.database_logger.resp_body = str(resp_body)
+        else:
+            self.logger.database_logger.resp_body = str(response.data)
+        self.logger.database_logger.resp_status = response.status_code
+        self.logger.database_logger.save()
+        self.logger.database_logger = LoggingDatabase()
 
     def _chunked_to_max(self, msg):
         return msg[0:self.max_body_length]

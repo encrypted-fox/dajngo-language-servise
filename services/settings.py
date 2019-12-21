@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'cities',
     'countries',
     'languages',
+    'logging_database',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'services.middleware.LoggingMiddleware',
+    'logging_database.middleware.LoggingMiddleware',
 ]
 
 ROOT_URLCONF = 'services.urls'
@@ -84,7 +85,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'services/debug.log',
+            'filename': 'logging_database/debug.log',
         },
     },
     'loggers': {
