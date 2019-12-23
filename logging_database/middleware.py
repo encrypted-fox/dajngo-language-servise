@@ -3,6 +3,7 @@ import re
 from datetime import datetime
 
 from django.conf import settings
+
 try:
     # Django >= 1.10
     from django.urls import resolve, Resolver404
@@ -10,7 +11,6 @@ except ImportError:
     # Django < 1.10
     from django.core.urlresolvers import resolve, Resolver404
 from .models import LoggingDatabase
-
 
 DEFAULT_LOG_LEVEL = logging.DEBUG
 DEFAULT_HTTP_4XX_LOG_LEVEL = logging.ERROR
@@ -52,12 +52,13 @@ class LoggingMiddleware(object):
 
         for log_attr in ('log_level', 'http_4xx_log_level'):
             level = getattr(self, log_attr)
+
             if level not in [logging.NOTSET, logging.DEBUG, logging.INFO,
                              logging.WARNING, logging.ERROR, logging.CRITICAL]:
                 raise ValueError("Unknown log level({}) in setting({})".format(level, SETTING_NAMES[log_attr]))
 
-        # TODO: remove deprecated legacy settings
         enable_colorize = getattr(settings, SETTING_NAMES['legacy_colorize'], None)
+
         if enable_colorize is None:
             enable_colorize = getattr(settings, SETTING_NAMES['colorize'], DEFAULT_COLORIZE)
 
@@ -67,6 +68,7 @@ class LoggingMiddleware(object):
             )
 
         self.max_body_length = getattr(settings, SETTING_NAMES['max_body_length'], DEFAULT_MAX_BODY_LENGTH)
+
         if not isinstance(self.max_body_length, int):
             raise ValueError(
                 "{} should be int. {} is not int.".format(SETTING_NAMES['max_body_length'], self.max_body_length)
@@ -76,13 +78,14 @@ class LoggingMiddleware(object):
         self.boundary = ''
 
     def __call__(self, request):
-        self.process_request( request )
-        response = self.get_response( request )
-        self.process_response( request, response )
+        self.process_request(request)
+        response = self.get_response(request)
+        self.process_response(request, response)
         return response
 
     def process_request(self, request):
         skip_logging_because = self._should_log_route(request)
+
         if skip_logging_because:
             return self._skip_logging_request(request, skip_logging_because)
         else:
@@ -115,6 +118,7 @@ class LoggingMiddleware(object):
         elif hasattr(view, 'view_class'):
             # This is for django class-based views
             func = getattr(view.view_class, method, None)
+
         no_logging = getattr(func, NO_LOGGING_ATTR, None)
         return no_logging
 
@@ -132,14 +136,25 @@ class LoggingMiddleware(object):
 
     def _log_request(self, request):
         method_path = "{} {}".format(request.method, request.get_full_path())
+
+        try:
+            path = re.match(r'\w+ /api/v0/\w+/', method_path).group(0)
+            params = re.split(r'\w+ /api/v0/\w+/', method_path)[1]
+        except:
+            path = method_path
+            params = ""
+
         logging_context = self._get_logging_context(request, None)
         req_date = str(datetime.now())
+
         self.logger.log(self.log_level, "".join(["Request datetime: ", req_date]), logging_context)
-        self.logger.database_logger.req_date = str(req_date)
         self.logger.log(logging.INFO, method_path, logging_context)
-        self.logger.database_logger.req_type = method_path
         self._log_request_headers(request, logging_context)
         self._log_request_body(request, logging_context)
+
+        self.logger.database_logger.req_date = str(req_date)
+        self.logger.database_logger.req_type = path
+        self.logger.database_logger.req_body = params
 
     def _log_request_headers(self, request, logging_context):
         headers = {k: v for k, v in request.META.items() if k.startswith('HTTP_')}
@@ -158,15 +173,20 @@ class LoggingMiddleware(object):
                 self._log_multipart(self._chunked_to_max(request.body), logging_context)
             else:
                 req_body = self._chunked_to_max(request.body).decode("utf-8")
+
                 self.logger.database_logger.req_body = str(req_body)
+
                 self.logger.log(self.log_level, req_body, logging_context)
 
     def process_response(self, request, response):
         resp_log = "{} {} - {}".format(request.method, request.get_full_path(), response.status_code)
         skip_logging_because = self._should_log_route(request)
+
         if skip_logging_because:
-            self.logger.log_error(logging.INFO, resp_log, {'args': {}, 'kwargs': { 'extra' :  { 'no_logging': skip_logging_because } }})
+            self.logger.log_error(logging.INFO, resp_log,
+                                  {'args': {}, 'kwargs': {'extra': {'no_logging': skip_logging_because}}})
             return response
+
         logging_context = self._get_logging_context(request, response)
 
         if response.status_code in range(400, 500):
@@ -231,10 +251,13 @@ class LoggingMiddleware(object):
 
     def _log_resp(self, level, response, logging_context):
         date = str(datetime.now())
+
         self.logger.log(self.log_level, "".join(["Response datetime: ", date]), logging_context)
         self.logger.database_logger.resp_date = date
+
         if re.match('^application/json', response.get('Content-Type', ''), re.I):
             self.logger.log(level, response._headers, logging_context)
+
             if response.streaming:
                 # There's a chance that if it's streaming it's because large and it might hit
                 # the max_body_length very often. Not to mention that StreamingHttpResponse
@@ -249,6 +272,7 @@ class LoggingMiddleware(object):
                 self.logger.database_logger.resp_body = str(resp_body)
         else:
             self.logger.database_logger.resp_body = str(response.data)
+
         self.logger.database_logger.resp_status = response.status_code
         self.logger.database_logger.save()
         self.logger.database_logger = LoggingDatabase()

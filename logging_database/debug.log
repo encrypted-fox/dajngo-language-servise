@@ -364,3 +364,148 @@ GET /api/v0/countries/
 {'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
 GET /api/v0/countries/ - 200
 Response datetime: 2019-12-21 11:04:58.383281
+Request datetime: 2019-12-21 11:08:12.722660
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-21 11:08:13.048247
+Request datetime: 2019-12-21 11:08:42.774206
+GET /api/v0/countries/ABW/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ABW/ - 200
+Response datetime: 2019-12-21 11:08:43.024821
+Request datetime: 2019-12-21 19:33:08.475814
+GET /api/v0/countries/ABW/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ABW/ - 200
+Response datetime: 2019-12-21 19:33:08.538646
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 79, in __call__
+    self.process_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 89, in process_request
+    return self._log_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 135, in _log_request
+    path = re.match(r'\w+ /api/v0/\w+/', method_path).group(0)
+AttributeError: 'NoneType' object has no attribute 'group'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 79, in __call__
+    self.process_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 89, in process_request
+    return self._log_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 135, in _log_request
+    path = re.match(r'\w+ /api/v0/\w+/', method_path).group(0)
+AttributeError: 'NoneType' object has no attribute 'group'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 79, in __call__
+    self.process_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 89, in process_request
+    return self._log_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 135, in _log_request
+    path = re.match(r'\w+ /api/v0/\w+/', method_path).group(0) or method_path
+AttributeError: 'NoneType' object has no attribute 'group'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 79, in __call__
+    self.process_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 89, in process_request
+    return self._log_request(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 135, in _log_request
+    path = re.match(r'\w+ /api/v0/\w+/', method_path).group(0) or method_path
+AttributeError: 'NoneType' object has no attribute 'group'
+Request datetime: 2019-12-23 11:17:20.934343
+GET /
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET / - 200
+Response datetime: 2019-12-23 11:17:21.020115
+Request datetime: 2019-12-23 11:17:21.792039
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_PRAGMA': 'no-cache', 'HTTP_CACHE_CONTROL': 'no-cache', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-23 11:17:21.826579
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 84, in __call__
+    self.process_response(request, response)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 197, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 275, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-23 11:19:14.680544
+GET /api/v0/countries/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/ - 200
+Response datetime: 2019-12-23 11:19:15.058062
+Request datetime: 2019-12-23 11:19:16.537489
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-23 11:19:16.554077
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 84, in __call__
+    self.process_response(request, response)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 197, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 275, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-23 11:19:31.989576
+GET /api/v0/countries/2134324123%5D/
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/2134324123%5D/ - 404
+Response datetime: 2019-12-23 11:19:32.166700
+Not Found: /api/v0/countries/2134324123]/
+Request datetime: 2019-12-23 11:19:32.849501
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/2134324123%5D/', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-23 11:19:32.864398
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 84, in __call__
+    self.process_response(request, response)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 197, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 275, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
+Request datetime: 2019-12-23 11:20:06.653866
+GET /api/v0/countries/2134324123%5D/?234234?sadsd/asdasdas?34324
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'HTTP_SEC_FETCH_SITE': 'none', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /api/v0/countries/2134324123%5D/?234234?sadsd/asdasdas?34324 - 404
+Response datetime: 2019-12-23 11:20:06.808447
+Not Found: /api/v0/countries/2134324123]/
+Request datetime: 2019-12-23 11:20:07.358299
+GET /favicon.ico
+{'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36', 'HTTP_ACCEPT': 'image/webp,image/apng,image/*,*/*;q=0.8', 'HTTP_SEC_FETCH_SITE': 'same-origin', 'HTTP_SEC_FETCH_MODE': 'no-cors', 'HTTP_REFERER': 'http://127.0.0.1:8000/api/v0/countries/2134324123%5D/?234234?sadsd/asdasdas?34324', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br', 'HTTP_ACCEPT_LANGUAGE': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', 'HTTP_COOKIE': 'session=eyJjc3JmX3Rva2VuIjoiYjVmZGUyZDJlYTZiZjhmNWZmNTAwNTVlMGNjZGNkOGFmNjQ2YTNhNSJ9.XS8q1g.dZHQHjrGWvygSd7M9zmin5XK3bc; PGADMIN_LANGUAGE=en; PGADMIN_KEY=9da76c66-d0fd-47c7-8b6c-e635b5152f72; tabstyle=html-tab; csrftoken=4PRYQfTlprgzL0CE91DhbApdfWQIklKjti0EKdob59kRoh2di3U7wEHA8Fmf0S9D'}
+GET /favicon.ico - 404
+Response datetime: 2019-12-23 11:20:07.374968
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\yaros\.virtualenvs\services-ezw1_58z\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 84, in __call__
+    self.process_response(request, response)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 197, in process_response
+    self._log_resp(logging.ERROR, response, logging_context)
+  File "E:\Media\Projects\PyCharmProjects\services\logging_database\middleware.py", line 275, in _log_resp
+    self.logger.database_logger.resp_body = str(response.data)
+AttributeError: 'HttpResponseNotFound' object has no attribute 'data'
