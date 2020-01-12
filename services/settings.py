@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_yasg',
     'django_filters',
     'cities',
     'countries',
@@ -131,6 +132,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+APPEND_SLASH = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/

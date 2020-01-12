@@ -29,5 +29,13 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="dcb13eef-000a-44d6-b675-6116710a32da">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/services/settings.py</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:E:\Media\Projects\PyCharmProjects\services\db.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>

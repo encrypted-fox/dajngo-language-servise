@@ -271,7 +271,8 @@ class LoggingMiddleware(object):
                                 logging_context)
                 self.logger.database_logger.resp_body = str(resp_body)
         else:
-            self.logger.database_logger.resp_body = str(response.data)
+            if hasattr(response, 'data'):
+                self.logger.database_logger.resp_body = str(response.data)
 
         self.logger.database_logger.resp_status = response.status_code
         self.logger.database_logger.save()

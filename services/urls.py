@@ -15,11 +15,32 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path, include
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import routers, permissions
+from django.urls import include
+from .views import DocsView
 
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Snippets API",
+        default_version='v1',
+        description="Test description",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="encrypted.fox.dev@gmail.com"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
+router = routers.DefaultRouter()
 urlpatterns = [
-    path('', include("cities.urls")),
-    path('', include("countries.urls")),
-    path('', include("languages.urls")),
+    url(r'^$', DocsView.as_view()),
+    url(r'^api/v0/swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    url('api/v0/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    url('api/v0/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    url('', include("cities.urls")),
+    url('', include("countries.urls")),
+    url('', include("languages.urls")),
 ]
