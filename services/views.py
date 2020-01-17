@@ -12,6 +12,7 @@ class DocsView(APIView):
                 "documentation": {
                     "swagger": request.build_absolute_uri("api/v0/swagger"),
                     "redoc": request.build_absolute_uri("api/v0/redoc"),
+                    "github": "https://github.com/encrypted-fox/services",
                 },
                 "cities": request.build_absolute_uri("api/v0/cities"),
                 "countries": request.build_absolute_uri("api/v0/countries"),
