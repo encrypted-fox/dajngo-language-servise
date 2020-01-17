@@ -43,4 +43,6 @@ urlpatterns = [
     url('', include("cities.urls")),
     url('', include("countries.urls")),
     url('', include("languages.urls")),
+    url('', include("logging_database.urls")),
+    url('frontend/', include("frontend.urls")),
 ]
