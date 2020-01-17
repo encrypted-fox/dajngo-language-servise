@@ -25,7 +25,10 @@ SECRET_KEY = 'tj34xicbl%^il28exxlr9i$b&^fod@t0-cpuvce9)la-ovob72'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'services.std-240.ist.mospolytech.ru',
+]
 
 
 # Application definition
@@ -100,7 +103,7 @@ LOGGING = {
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 100
+    'PAGE_SIZE': 20
 }
 
 # Database
@@ -151,4 +154,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_ROOT = "/home/std/python/services/static/"
+STATIC_URL = "/static/"
