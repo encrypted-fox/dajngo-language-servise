@@ -79,7 +79,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"city\",\r\n    \"district\": \"city\",\r\n    \"population\": 1234,\r\n    \"country_code\": \"ABb\"\r\n}"
+					"raw": "{\r\n    \"name\": \"city\",\r\n    \"district\": \"city\",\r\n    \"population\": 1234,\r\n    \"country_code\": \"ABW\"\r\n}"
 				},
 				"url": {
 					"raw": "127.0.0.1:8000/api/v0/cities/",
@@ -442,7 +442,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"code\": \"ABb\",\r\n    \"code_2\": \"Ab\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}"
+					"raw": "{\r\n    \"code\": \"ABl\",\r\n    \"code_2\": \"Ab\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}"
 				},
 				"url": {
 					"raw": "127.0.0.1:8000/api/v0/countries/",
@@ -543,7 +543,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/v0/countries/ABV/",
+					"raw": "127.0.0.1:8000/api/v0/countries/ABW/",
 					"host": [
 						"127",
 						"0",
@@ -555,7 +555,7 @@
 						"api",
 						"v0",
 						"countries",
-						"ABV",
+						"ABW",
 						""
 					]
 				}
@@ -693,7 +693,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/api/v0/countries/2/",
+					"raw": "127.0.0.1:8000/api/v0/countries/3/",
 					"host": [
 						"127",
 						"0",
@@ -705,7 +705,7 @@
 						"api",
 						"v0",
 						"countries",
-						"2",
+						"3",
 						""
 					]
 				}
@@ -754,7 +754,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/api/v0/countries/2/",
+					"raw": "127.0.0.1:8000/api/v0/countries/8/",
 					"host": [
 						"127",
 						"0",
@@ -766,7 +766,7 @@
 						"api",
 						"v0",
 						"countries",
-						"2",
+						"8",
 						""
 					]
 				}
@@ -1057,7 +1057,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/api/v0/languages/2/",
+					"raw": "127.0.0.1:8000/api/v0/languages/5/",
 					"host": [
 						"127",
 						"0",
@@ -1069,7 +1069,7 @@
 						"api",
 						"v0",
 						"languages",
-						"2",
+						"5",
 						""
 					]
 				}

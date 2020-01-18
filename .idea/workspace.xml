@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="128ec132-9d3d-464b-b51d-4a157010e98e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API.postman_collection.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,18 +68,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Media\Projects\PyCharmProjects\services" />
+      <recent name="E:\Media\Projects\PyCharmProjects\services\logging_database" />
+      <recent name="E:\Media\Projects\PyCharmProjects\services\frontend" />
+      <recent name="E:\Media\Projects\PyCharmProjects\services\frontend\src\components" />
+      <recent name="E:\Media\Projects\PyCharmProjects\services\frontend\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Media\Projects\PyCharmProjects\services\logging_database" />
       <recent name="E:\Media\Projects\_LEARNING\services\languages" />
       <recent name="E:\Media\Projects\_LEARNING\services\countries" />
       <recent name="E:\Media\Projects\_LEARNING\services\cities" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Media\Projects\PyCharmProjects\services\logging_database" />
-      <recent name="E:\Media\Projects\PyCharmProjects\services\frontend" />
-      <recent name="E:\Media\Projects\PyCharmProjects\services\frontend\src\components" />
-      <recent name="E:\Media\Projects\PyCharmProjects\services\frontend\src" />
-      <recent name="E:\Media\Projects\PyCharmProjects\services" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.services">
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579346426660</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Postman Collection">
+      <created>1579346633053</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579346633053</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +240,8 @@
     <MESSAGE value="requirements.txt file added for alternative virtualenv" />
     <MESSAGE value="Monitoring added" />
     <MESSAGE value="Github added to browsable api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Github added to browsable api" />
+    <MESSAGE value="Added Postman Collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Postman Collection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Log_Highlighting_(ideolog)" timestamp="1576077827574">
@@ -252,10 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578273596225" />
-    <state x="573" y="27" key="CommitChangelistDialog2" timestamp="1579346421969">
+    <state x="573" y="27" key="CommitChangelistDialog2" timestamp="1579346632195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="573" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579346421969" />
+    <state x="573" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579346632195" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1578841143040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576570311227" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1579346481851">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1579346638835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579346481851" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579346638835" />
     <state x="210" y="329" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1578841937192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
