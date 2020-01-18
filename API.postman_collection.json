@@ -1,0 +1,1081 @@
+{
+	"info": {
+		"_postman_id": "f5806b7b-b5db-41a7-8063-8f8185347bfe",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "server OK",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid insertion cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdc52969-cf1e-46b9-a77a-438746c085db",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Created\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"city\",\r\n    \"district\": \"city\",\r\n    \"population\": 1234,\r\n    \"country_code\": \"ABb\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid insertion cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdc52969-cf1e-46b9-a77a-438746c085db",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Bad Request\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"ABV\",\r\n    \"code_2\": \"AV\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asааia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid get cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid get cities [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/1/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get cities [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Not Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([404]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Not Found\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/6743987",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						"6743987"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid put cities [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "35e0b656-812e-40f4-ba92-0c4a2d78dd84",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"city\",\r\n    \"district\": \"city\",\r\n    \"population\": 1234,\r\n    \"country_code\": \"ABW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/2/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid delete cities [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/cities/3/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"cities",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid insertion countries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdc52969-cf1e-46b9-a77a-438746c085db",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Created\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"ABb\",\r\n    \"code_2\": \"Ab\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid insertion countries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdc52969-cf1e-46b9-a77a-438746c085db",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Bad Request\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"ABV\",\r\n    \"code_2\": \"AV\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asааia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid get countries [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/ABV/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						"ABV",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid get countries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get countries [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([404]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Not Found\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/ABVv/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						"ABVv",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid put countries [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"ABb\",\r\n    \"code_2\": \"Ab\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/2/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid delete countries [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/countries/2/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid insertion languages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdc52969-cf1e-46b9-a77a-438746c085db",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Created\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"lan\",\r\n    \"is_official\": true,\r\n    \"percentage\": 18,\r\n    \"country_code\": \"ABb\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/languages/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"languages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid insertion languages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdc52969-cf1e-46b9-a77a-438746c085db",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Bad Request\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"ABV\",\r\n    \"code_2\": \"AV\",\r\n    \"name\": \"Avgan\",\r\n    \"continent\": \"Asааia\",\r\n    \"region\": \"Asia\",\r\n    \"surface_area\": 193.00,\r\n    \"indep_year\": 1000,\r\n    \"population\": 10000,\r\n    \"life_expectancy\": 17.7,\r\n    \"GNP\": 828.00,\r\n    \"GNP_old\": 828.00,\r\n    \"local_name\": \"Av\",\r\n    \"government_form\": \"Av\",\r\n    \"head_of_state\": \"Av\",\r\n    \"capital\": 1\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/languages/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"languages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid get languages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/languages/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"languages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid get languages [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/languages/1/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"languages",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get languages [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Unsuccessful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([404]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Not Found\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/languages/ads/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"languages",
+						"ads",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "valid delete languages [id]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7da6772d-3661-4bf7-b16b-92a18d283ebe",
+						"exec": [
+							"pm.test(\"Successful PUT request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v0/languages/2/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v0",
+						"languages",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
